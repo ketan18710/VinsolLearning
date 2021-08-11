@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Contact form</h1>
+  <form enctype="multipart/form-data">
+    <div class="inputGroup">
+      <div class="inputContainer">
+        <label for="name">Your Name*</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="inputContainer">
+        <label for="email">Email*</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="inputContainer">
+        <label for="Phone">Phone Number</label>
+        <input type="number" id="Phone" >
+      </div>
+      <div class="inputContainer">
+        <label for="websiteURL">Website*</label>
+        <input type="url" id="websiteURL" required value="http://">
+      </div>
+      <div class="inputContainerTextarea">
+        <label for="Comments">Comments*</label><br>
+        <textarea name="Comments" id="Comments" cols="30" rows="10" required></textarea>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Text Field</h3>
+      <div class="inputContainer">
+        <label for="Yourname">Your Name</label>
+        <input type="text" id="Yourname" required>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Password Field</h3>
+      <div class="inputContainer">
+        <label for="Yourname">Your Name</label>
+        <input type="text" id="Yourname" required>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Radio Buttons</h3>
+      <p>Do you like pizza?</p>
+      <div class="inputContainer radioContainer">
+        <input type="radio" id="yes" name="pizza" value="yes">
+        <label for="yes">Yes</label>
+      </div>
+      <div class="inputContainer radioContainer">        
+        <input type="radio" id="no" name="pizza" value="no">
+        <label for="no">No</label>
+      </div>
+      <div class="inputContainer radioContainer">
+        <input type="radio" id="maybe" name="pizza" value="maybe">
+        <label for="maybe">Maybe</label>
+      </div>
+      <div class="inputContainer radioContainer">
+        <input type="radio" id="neverTried" name="pizza" value="neverTried">
+        <label for="neverTried">Never Tried</label>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Check Box</h3>
+      <div class="inputContainer radioContainer">
+        <input type="checkbox" id="checkbox" name="checkbox" value="yes">
+        <label for="checkbox">Check this box if you like our service</label>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Textarea</h3>
+      <div class="inputContainerTextarea">
+        <label for="textarea">Anything you would like to say</label><br>
+        <textarea style="width: 50%;margin-top: 0.5rem;" name="textarea" id="textarea" cols="30" rows="6"   ></textarea>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>I like</h3>
+      <div class="inputContainerTextarea">
+        <select name="likes" id="likes" multiple>
+          <option value="mushrooms">Mushrooms</option>
+          <option value="greenpeppers">Green Peppers</option>
+          <option value="onions">Onions</option>
+          <option value="tomatoes">Tomatoes</option>
+          <option value="olives">Olives</option>
+        </select>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Menu</h3>
+      <div class="inputContainerTextarea">
+        <label for="menu">Your Favourite color</label>
+        <select name="menu" id="menu" >
+          <option value="red">red</option>
+          <option value="orange">orange</option>
+          <option value="green">green</option>
+        </select>
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Attach a file</h3>
+      <div class="inputContainerTextarea">
+        <input type="file" name="" id="">
+      </div>
+    </div>
+    <div class="inputGroup">
+      <h3>Buttons</h3>
+      <div class="inputContainerButtons">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submt">
+      </div>
+    </div>
+  </form>
+</body>
+</html>
