@@ -1,13 +1,3 @@
-@mixin centreAlign {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin spaceBetween {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 $blue : #0ab1ff;
 $lightblue : #b2e7ff;
 $black : #000;
