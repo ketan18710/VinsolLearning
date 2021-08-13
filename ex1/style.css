@@ -15,19 +15,25 @@ form {
   width: 500px;
   margin: auto;
 }
+
 form .inputGroup {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 30% 70%;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
   gap: 2rem;
   margin: 0.5rem auto;
 }
+
 form .inputGroup label {
   text-align: end;
   font-size: 16px;
 }
+
 form .inputGroup #submit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: 1rem;
 }
-
 /*# sourceMappingURL=style.css.map */
