@@ -1,0 +1,125 @@
+body {
+  background-color: #f3f2f2;
+  margin-top: 0;
+}
+
+.topbar {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: lightgrey;
+}
+.topbar .circle {
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+header {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .content h3 {
+  margin: 0.5rem 0;
+  color: #3b3939;
+  border-left: 1px solid #3b3939;
+}
+header .content nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  gap: 1rem;
+}
+header .content nav p {
+  font-size: 16px;
+  margin: 0;
+  color: lightgrey;
+  font-weight: 400;
+  width: 80px;
+}
+
+.heroBanner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.products {
+  margin: 2rem 0;
+}
+.products h4 {
+  margin: 1rem 0;
+  color: #3b3939;
+  text-align: center;
+  font-size: 36px;
+}
+.products .productGallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  margin: auto;
+}
+.products .productGallery .product {
+  width: 300px;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(164, 157, 157, 0.6);
+}
+.products .productGallery .product img {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  object-fit: contain;
+}
+.products .productGallery .product h6 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #777070;
+  margin: 0.5rem 0;
+}
+.products .productGallery .product p {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #585454;
+  margin: 0.5rem 0;
+}
+.products .productGallery .product p sup {
+  font-size: 18px;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+.brands .brand {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
