@@ -1,0 +1,29 @@
+body{
+  border: 1px solid rgb(65, 63, 63);
+}
+h1{
+  font-size: 36px;
+  text-align: center;
+  padding:  2rem 0;
+  width: 100%;
+  margin: 0;
+  background-color: lightgrey;
+}
+form{
+  width: 500px;
+  margin: auto;
+  .inputGroup{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 2rem;
+    margin: 0.5rem auto;
+    label{
+      text-align: end;
+      font-size: 16px;
+    }
+    #submit{
+      width: fit-content;
+      margin-top: 1rem;
+    }
+  }
+}
