@@ -4,117 +4,117 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Track 1</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Form</title>
 </head>
+<style>
+  input{
+    width: 100%;
+  }
+  .btnsGroup td input{
+    width: fit-content;
+  }
+</style>
 <body>
-  <h1>Contact form</h1>
-  <form enctype="multipart/form-data">
-    <div class="inputGroup">
-      <div class="inputContainer">
-        <label for="name">Your Name*</label>
-        <input type="text" id="name" required>
-      </div>
-      <div class="inputContainer">
-        <label for="email">Email*</label>
-        <input type="email" id="email" required>
-      </div>
-      <div class="inputContainer">
-        <label for="Phone">Phone Number</label>
-        <input type="number" id="Phone" >
-      </div>
-      <div class="inputContainer">
-        <label for="websiteURL">Website*</label>
-        <input type="url" id="websiteURL" required value="http://">
-      </div>
-      <div class="inputContainerTextarea">
-        <label for="Comments">Comments*</label><br>
-        <textarea name="Comments" id="Comments" cols="30" rows="10" required></textarea>
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>Text Field</h3>
-      <div class="inputContainer">
-        <label for="Yourname">Your Name</label>
-        <input type="text" id="Yourname" required>
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>Password Field</h3>
-      <div class="inputContainer">
-        <label for="Yourname">Your Name</label>
-        <input type="text" id="Yourname" required>
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>Radio Buttons</h3>
-      <p>Do you like pizza?</p>
-      <div class="inputContainer radioContainer">
-        <input type="radio" id="yes" name="pizza" value="yes">
-        <label for="yes">Yes</label>
-      </div>
-      <div class="inputContainer radioContainer">        
-        <input type="radio" id="no" name="pizza" value="no">
-        <label for="no">No</label>
-      </div>
-      <div class="inputContainer radioContainer">
-        <input type="radio" id="maybe" name="pizza" value="maybe">
-        <label for="maybe">Maybe</label>
-      </div>
-      <div class="inputContainer radioContainer">
-        <input type="radio" id="neverTried" name="pizza" value="neverTried">
-        <label for="neverTried">Never Tried</label>
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>Check Box</h3>
-      <div class="inputContainer radioContainer">
-        <input type="checkbox" id="checkbox" name="checkbox" value="yes">
-        <label for="checkbox">Check this box if you like our service</label>
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>Textarea</h3>
-      <div class="inputContainerTextarea">
-        <label for="textarea">Anything you would like to say</label><br>
-        <textarea style="width: 50%;margin-top: 0.5rem;" name="textarea" id="textarea" cols="30" rows="6"   ></textarea>
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>I like</h3>
-      <div class="inputContainerTextarea">
-        <select name="likes" id="likes" multiple>
-          <option value="mushrooms">Mushrooms</option>
-          <option value="greenpeppers">Green Peppers</option>
-          <option value="onions">Onions</option>
-          <option value="tomatoes">Tomatoes</option>
-          <option value="olives">Olives</option>
-        </select>
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>Menu</h3>
-      <div class="inputContainerTextarea">
+  <h1>HTML5 form</h1>
+  <form >
+    <table>
+      <tr>
+        <td ><label for="name">Your Name*</label></td>
+        <td colspan="15"><input type="text" id="name" required /></td>
+      </tr>
+      <tr>
+        <td ><label for="email">Email*</label></td>
+        <td colspan="15"><input type="email" id="email" required /></td>
+      </tr>
+      <tr>
+        <td ><label for="Phone">Phone Number</label></td>
+        <td colspan="15"><input type="number" id="Phone" /></td>
+      </tr>
+      <tr>
+        <td ><label for="websiteURL">Website*</label></td>
+        <td colspan="15"><input type="url" id="websiteURL" required value="http://"></td>
+      </tr>
+      <tr>
+        <td colspan="100%"><label for="Comments">Comments*</label></td>
+      </tr>
+      <tr>
+        <td colspan="100%">
+          <textarea name="Comments" id="Comments" cols="30" rows="10" required></textarea>
+        </td>
+      </tr>
+      <tr><td><h3>Text Field</h3></td></tr>
+      <tr>
+        <td ><label for="Yourname">Your Name</label></td>
+        <td colspan="15"><input type="text" id="Yourname" required /></td>
+      </tr>
+      <tr>
+      <tr><td><h3>Password Field</h3></td></tr>
+      <tr>
+        <td ><label for="YourPass">Your Password</label></td>
+        <td colspan="15"><input type="password" id="YourPass" required /></td>
+      </tr>
+      <tr><td><h3>Radio Buttons</h3></td></tr>
+      <tr><td><p>Do you like pizza?</p></td></tr>
+      <tr class="btnsGroup">
+        <td ><input type="radio" id="yes" name="pizza" value="yes"/></td>
+        <td colspan="2"><label for="yes">Yes</label></td>
+        <td ><input type="radio" id="no" name="pizza" value="no"></td>
+        <td colspan="2"><label for="no">No</label></td>
+        <td ><input type="radio" id="maybe" name="pizza" value="maybe"></td>
+        <td colspan="2"><label for="maybe">Maybe</label></td>
+        <td ><input type="radio" id="neverTried" name="pizza" value="neverTried"></td>
+        <td colspan="2"><label for="neverTried">Never Tried</label></td>
+      </tr>
+      <tr><td><h3>Check Box</h3></td></tr>
+      <tr>
+        <td colspan="1"><input type="checkbox" id="checkbox" name="checkbox" value="yes"></td>
+        <td colspan="1"><label for="checkbox">Check this box if you like our service</label></td>
+      </tr>
+      <tr><td><h3>Textarea</h3></td></tr>
+      <tr>
+        <td><label for="textarea">Anything you would like to say</label><br></td>
+      </tr>
+      <tr>
+        <td><textarea  name="textarea" id="textarea" cols="70" rows="8"   ></textarea></td>
+      </tr>
+      <tr><td><h3>I Like</h3></td></tr>
+      <tr>
+        <td colspan="2">
+          <select name="likes" id="likes" multiple>
+            <option value="mushrooms">Mushrooms</option>
+            <option value="greenpeppers">Green Peppers</option>
+            <option value="onions">Onions</option>
+            <option value="tomatoes">Tomatoes</option>
+            <option value="olives">Olives</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td><h3>Menu</h3></td></tr>
+      <tr><td>
         <label for="menu">Your Favourite color</label>
-        <select name="menu" id="menu" >
-          <option value="red">red</option>
-          <option value="orange">orange</option>
-          <option value="green">green</option>
-        </select>
-      </div>
-    </div>
+      </td></tr>
+      <tr>
+        <td colspan="2">
+          <select name="menu" id="menu" >
+            <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="green">green</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><h3>Attach a file</h3></td>
+        <td colspan="6"><input type="file" name="" id=""></td>
+      </tr>
+      <tr><td><h3>Buttons</h3></td></tr>
+      <tr>
+        <td colspan="2"><input type="reset" value="Reset"></td>
+        <td colspan="2"><input type="submit" value="Submt"></td>
+      </tr>
+    </table>
     <div class="inputGroup">
-      <h3>Attach a file</h3>
-      <div class="inputContainerTextarea">
-        <input type="file" name="" id="">
-      </div>
-    </div>
-    <div class="inputGroup">
-      <h3>Buttons</h3>
-      <div class="inputContainerButtons">
-        <input type="reset" value="Reset">
-        <input type="submit" value="Submt">
-      </div>
+      
+      
     </div>
   </form>
 </body>
