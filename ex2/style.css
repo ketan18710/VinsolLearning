@@ -46,14 +46,15 @@ main nav {
   margin: 1rem auto;
 }
 
-main nav p {
+main nav a {
+  text-decoration: none;
   color: white;
   font-size: 14px;
   border-right: 1px solid white;
   padding: 0 0.5rem;
 }
 
-main nav p:last-of-type {
+main nav a:last-of-type {
   border: none;
 }
 
@@ -77,6 +78,11 @@ section {
           align-items: center;
   gap: 1.5rem;
   border: 1px solid #b4b4b4;
+}
+
+section video {
+  width: 400px;
+  height: 240px;
 }
 
 section p {

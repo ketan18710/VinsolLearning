@@ -35,7 +35,8 @@ main{
     gap: 0.5rem;
     padding-left: 1rem;
     margin: 1rem auto;
-    p{
+    a{
+      text-decoration: none;
       color: white;
       font-size: 14px;
       border-right: 1px solid white;
@@ -56,6 +57,10 @@ section{
   @include align($spaceB,$center );
   gap: 1.5rem;
   border: 1px solid #b4b4b4;
+  video{
+    width : 400px;
+    height : 240px;
+  }
   p{
     width: 340px;
     height: 100%;
